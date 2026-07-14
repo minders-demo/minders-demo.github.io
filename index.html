@@ -2,11 +2,62 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Minders Demo</title>
-    <meta http-equiv="refresh" content="0; url=/MindersMall/" />
-    <script>window.location.replace('/MindersMall/');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minders — Demo Hub</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #F2F2F2; color: #1C1F24; min-height: 100vh;
+        font-family: 'Space Mono', monospace;
+        display: flex; flex-direction: column; align-items: center;
+        justify-content: center; padding: 40px 20px;
+      }
+      .eyebrow { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #6b6f76; margin-bottom: 12px; }
+      h1 { font-family: Arial Black, sans-serif; font-size: clamp(40px, 8vw, 84px); letter-spacing: -2px; margin-bottom: 40px; }
+      h1 span { color: #8799FB; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; width: 100%; max-width: 860px; }
+      a.card {
+        background: #1C1F24; color: #F2F2F2; text-decoration: none;
+        border-radius: 18px; padding: 28px 24px; transition: transform .15s ease;
+        display: block;
+      }
+      a.card:hover { transform: translateY(-4px); }
+      a.card .num { font-size: 11px; color: #A4F1FB; letter-spacing: 2px; }
+      a.card h2 { font-family: Arial Black, sans-serif; font-size: 22px; margin: 10px 0 6px; }
+      a.card p { font-size: 12px; color: #b8bcc4; line-height: 1.5; }
+      footer { margin-top: 60px; font-size: 11px; color: #9a9ea6; letter-spacing: 1px; }
+    </style>
   </head>
   <body>
-    <p>Redirigiendo… <a href="/MindersMall/">Ir a Minders Mall</a></p>
+    <div class="eyebrow">Entornos de demostración</div>
+    <h1>Minders<span>.</span></h1>
+    <div class="grid">
+      <a class="card" href="/MindersCredit/">
+        <div class="num">01 — AMPLITUDE</div>
+        <h2>MindersCredit</h2>
+        <p>Cooperativa financiera digital. Analytics, Session Replay, Experiment y cross-device.</p>
+      </a>
+      <a class="card" href="/MindersMall/">
+        <div class="num">02 — BRAZE</div>
+        <h2>MindersMall</h2>
+        <p>E-commerce. Push, in-app messages y content cards.</p>
+      </a>
+      <a class="card" href="/MindersLive/">
+        <div class="num">03 — AMPLITUDE</div>
+        <h2>MindersLive</h2>
+        <p>Ticketing y eventos. Web Experiment y visual editor.</p>
+      </a>
+      <a class="card" href="/MindersFly/">
+        <div class="num">04 — AMPLITUDE</div>
+        <h2>MindersFly</h2>
+        <p>Aerolínea. Suite completa de producto.</p>
+      </a>
+      <a class="card" href="/MindersPay/">
+        <div class="num">05 — AMPLITUDE</div>
+        <h2>MindersPay</h2>
+        <p>Fintech. Funnels de conversión y drivers.</p>
+      </a>
+    </div>
+    <footer>MINDERS ® 2026 — DEMO ENVIRONMENTS</footer>
   </body>
 </html>
